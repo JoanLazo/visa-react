@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 // import './App.css';
-import Loan from './components/Loan/Loan.js';
+import StepOne from './components/StepOne/StepOne.js';
 import Home from './components/Home/Home.js';
 
 
@@ -11,7 +11,7 @@ class App extends Component {
           return(
             <div>
               <Home/>
-              <Loan/>
+              <StepOne/>
             </div>
             
           )

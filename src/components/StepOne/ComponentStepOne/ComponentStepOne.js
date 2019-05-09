@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import './Step1.css';
-class App extends Component {
+import './ComponentStepOne.css';
+class ComponentStepOne extends Component {
 
     render() {
         return(
@@ -123,4 +123,4 @@ class App extends Component {
 }
 
 
-export default App;
+export default ComponentStepOne;

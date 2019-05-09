@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 // import './App.css';
-import Step1 from './Step1/Step1.js';
+import ComponentStepOne from './ComponentStepOne/ComponentStepOne.js';
 
 
-class Loan extends Component {
+class StepOne extends Component {
   constructor (props) {
     super(props);
     this.state = {
@@ -32,7 +32,7 @@ class Loan extends Component {
 
   render() {
     return(
-      <Step1 
+      <ComponentStepOne 
       quantity={this.state.quantity} 
       time={this.state.time}
       addMoney={this.addMoney}
@@ -44,4 +44,4 @@ class Loan extends Component {
   }
 
 
-export default Loan;
+export default StepOne;
