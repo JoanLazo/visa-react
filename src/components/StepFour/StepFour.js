@@ -1,7 +1,15 @@
 import React from 'react';
 import './stepfour.css';
 
-const StepFour = () => (
+const stepFour = ({sendHandler, empresaImg, cuotaMensual, prestamo, interes, totalaPagar }) => {
+    
+    const continueHandler = (e, inputCuenta, inputBanco  ) => {
+        e.preventDefault();
+        sendHandler();
+    }
+
+ return(
+     <React.Fragment>
  <section className="container">
  <div className="row">
  <div className="column-10">
@@ -18,7 +26,7 @@ const StepFour = () => (
         <p>Cuota</p>
             <div className="color-gris">
             {/*aqui va el props de cuota mensual*/}
-                <p className="bolt">s/. 377.78</p>
+                <h5 className="bolt text-baner">s/. 377.78</h5>
                 <p className="bolt text-mensual">mensuales</p>
              </div>
         </div>
@@ -30,7 +38,7 @@ const StepFour = () => (
                   {/* aqui va el monto del prestamo*/}
                   <div className="d-flex">
                   <p className="ml-3">10,000</p>
-                  <p className="ml-3">+</p>
+                  <p className="ml-3 color-yellow">+</p>
                   </div>
                   
                 </div>
@@ -39,7 +47,7 @@ const StepFour = () => (
                   {/* aqui va el monto del interes */}
                   <div className="d-flex">
                   <p className="ml-2">3,600</p>
-                  <p className="ml-2">=</p>
+                  <p className="ml-2 color-yellow">=</p>
                   </div>
                   
                 </div>
@@ -57,23 +65,31 @@ const StepFour = () => (
     <form className="d-flex flex-column">
         <h6>Datos</h6>
         <label>Ingresa el N° de cuenta donde se depositará tu préstamo</label>
-        <input className="border-yellow-input" type="text"></input>
-        <label>Banco </label>
-        <input className="border-yellow-input" type="text" name="banco"></input>
+        <input className="border-yellow-input" type="text" name="cuenta"></input>
+        <label>Banco</label>
+        <select className="border-yellow-input"  name="banco">
+            <option value="BANCO BNG">BANCO BNG</option>
+            <option value="BANCO DE CREDITO">BANCO DE CREDITO DEL PERÚ</option>
+            <option value="BANCO CONTINENTAL">BANCO CONTINENTAL (BBVA)</option>
+            <option value="BANCO INTERBANK">BANCO INTERBANK</option>
+            <option value="BANCO DE LA NACION">BANCO DE LA NACION</option>
+        </select>
         <div>
         <input type="checkbox"></input>Acepto <span><a href="">términos y condiciones</a></span> <br/>
         <input type="checkbox"></input>Acepto <span><a href="">compartir los datos de ventas de Visanet con la entidad financiera.</a></span>
         </div>
         
-        <button className="col-5 btn-prestamo color-black bckg-yellow">RECIBIR MI PRÉSTAMO</button>
+        <button className="col-5 btn-prestamo color-black bckg-yellow" onClick = { () => continueHandler() }>RECIBIR MI PRÉSTAMO</button>
     </form>
 <div>
- <h4>ATENCIÓN AL CLIENTE:</h4>
+ <h5 className="mt-5">ATENCIÓN AL CLIENTE:</h5>
 </div>
  <img src="https://user-images.githubusercontent.com/44485081/57443843-8ce15200-7214-11e9-811d-caed0f7026fc.jpg" alt="atención al cliente"></img>
  </div>
  </div>
     
  </section>
-);
-export default StepFour;
+ </React.Fragment>
+ );
+};
+export default stepFour;
