@@ -104,25 +104,28 @@ const Home = () => (
               <div className="col-4 justify-content-center align-content-center">  
               <button className="btn-facebook bckg-yellow color-white my-2 ml-5">VENDO POR FACEBOOK</button>
                 <div className="border-yellow mt-1 py-4 align-content-center">
-                <p className="text-mini text-justify">CON ESTE PACK AUMENTARÁS UN 20% TUS VENTAS</p>
+                <p className="ml-4 col-10 text-mini text-justify">CON ESTE PACK AUMENTARÁS UN 20% TUS VENTAS</p>
                   <img className="margen img-card-home" src="https://user-images.githubusercontent.com/44485081/57427956-d1a4c300-71eb-11e9-830c-3adb47971fb6.jpg" alt="poket pos"></img>
                </div>
+               <button className="btn-loquiero bckg-yellow color-white">LO QUIERO</button>
               </div>
 
               <div className="col-4 justify-content-center align-content-center">
               <button className="btn-solucion-two bckg-yellow color-white my-2 ml-5">TENGO UNA TIENDA FÍSICA Y QUIERO CRECER</button>
                 <div className="border-yellow mt-1 py-4 align-content-center">
-                <p className="text-mini text-justify text-center">CON ESTE PACK PODRÁS VENDER DE FORMA ONLINE</p>
+                <p className=" ml-4 col-10 text-mini text-justify text-center">CON ESTE PACK PODRÁS VENDER DE FORMA ONLINE</p>
                   <img className="margen img-card-home" src="https://user-images.githubusercontent.com/44485081/57427972-e3866600-71eb-11e9-8934-dd8bcbf864b2.jpg" alt="tu vitrina"></img>
                 </div>
+                <button className="btn-loquiero bckg-yellow color-white">LO QUIERO</button>
              </div>
 
                 <div className="col-4 justify-content-center align-content-center">
                 <button className="btn-solucion-two bckg-yellow color-white my-2 ml-4">BUSCO SERVICIOS DE VALOR AGREGADO</button>
                   <div className="border-yellow mt-1 py-4 align-content-center">
-                  <p className="text-mini text-justify text-center">CON ESTE PACK PODRÁS OFRECER MÁS SERVICIOS</p>
+                  <p className=" ml-4 col-10 text-mini text-justify text-center">CON ESTE PACK PODRÁS OFRECER MÁS SERVICIOS</p>
                      <img className="margen img-card-home" src="https://user-images.githubusercontent.com/44485081/57427989-f6993600-71eb-11e9-8489-54534a5d8429.jpg" alt="suma"></img>
                   </div>
+                  <button className="btn-loquiero bckg-yellow color-white">LO QUIERO</button>
                  </div>
                </div>
             </div>

@@ -1,9 +1,10 @@
 import React from 'react';
-import Home from './components/Home/Home'
+import Home from './components/Home/Home';
+import StepFour from './components/StepFour';
 
 function App() {
   return (
-  <Home />
+  <StepFour/>
   );
 }
 
