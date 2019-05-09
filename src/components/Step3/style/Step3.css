@@ -1,32 +1,8 @@
-.b-plus-less {
-    background: #f9cd09;
-    border-radius: 5px;
-    color: #fff;
-    cursor: pointer;
-    font-size: 33px;
-    height: 50px;
-  }
-  .border-bank {
-    border-top: 2px solid #f1f2f4;
-    border-right: 2px solid #f1f2f4;
-    border-bottom: 2px solid #f1f2f4;
-    border-left: 10px solid #f1f2f4;
-  }
-  .box-grey {
-    background: #f1f2f4;
-    border-radius: 5px;
-  }
-  .font-size-cash {
-    font-size: 20px;
-  }
-  .font-size-pay {
-    font-size: 33px;
-  }
-  .font-size-summary {
-    font-size: 12px;
-  }
-  .title {
-    color: #c50a5b !important;
-    font-weight: 600;
-    font-size: 25px;
-  } 
+.card {
+  margin-top: 1%;
+  margin-left: 6%;
+  width: 80%;
+  border-radius: 0%;
+  border-color: #8b8992;
+  border-left-width: 10px;
+}

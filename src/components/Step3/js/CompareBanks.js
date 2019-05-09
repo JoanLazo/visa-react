@@ -64,8 +64,8 @@ class CompareBanks extends Component {
             <h2>TE OFRECEMOS LOS MEJORES PRÉSTAMOS PARA TI</h2>
             <div className="row">
             { size.length ?
-            banks[options].map(({ name, img,loan, tcea, interest, total}) => 
-            <ListOfBanks name={name} image={img} tcea={tcea} loan={loan} interest={interest} total={total}/>)
+            banks[options].map(({ name, img,loan, payment, tcea, interest, total}) => 
+            <ListOfBanks name={name} image={img} tcea={tcea} loan={loan} payment={payment} interest={interest} total={total}/>)
             : <span className= "ml-3"> Cargando lista de bancos...</span>}
             </div>
             </div>
