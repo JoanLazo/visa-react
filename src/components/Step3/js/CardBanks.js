@@ -1,6 +1,5 @@
 import React from 'react';
 import '../style/Step3.css';
-import '.../Home/Home.css';
  
 const ListOfBanks = ({ name, img,loan, payment, tcea, interest, total }) => {
   return (
