@@ -1,11 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styles from './Layer.module.css';
+import styles from './Layout.module.css';
 import Toolbar from '../Toolbar';
 
-const Layout = ({ children }) => {
-
-  return (
+const layout = ({ children }) => (
     <>
       <Toolbar />
       <main className={styles.Content}>
@@ -13,9 +11,8 @@ const Layout = ({ children }) => {
       </main>
     </>
   );
-};
 
-export default Layout;
+export default layout;
 
 Layer.propTypes = {
   children: PropTypes.element.isRequired,
