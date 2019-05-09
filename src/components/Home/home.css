@@ -1,0 +1,38 @@
+.baner-home{
+  width: 1200px;
+  height: 600px;
+  background-image: url('https://user-images.githubusercontent.com/44485081/57415847-4dd6e080-71c3-11e9-8d66-7b86719810a0.png');
+  background-position: center;
+  background-size: cover;
+}
+
+.flota {
+  float: initial;
+}
+.btn-baner{
+  border: 2px solid #C50A5B;
+  background: transparent;
+  padding: 35px;
+  border-radius: 5px;
+  width: 350px;
+  height: 50px;
+  font-size: 18px;
+}
+
+.color-pink{
+  color: #C50A5B;
+}
+.bckg-pink{
+  background: #C50A5B;
+}
+
+.color-yellow{
+  color: #F9CD09;
+}
+
+.bckg-yellow{
+  background: #F9CD09;
+}
+.text-baner{
+  font-size: 35px;
+}
