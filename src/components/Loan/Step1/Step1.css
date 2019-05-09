@@ -1,0 +1,30 @@
+.color-base{
+    color: #c50a5b
+}
+.bg-base{
+    background-color: #c50a5b;
+    color: white
+}
+.text-link{
+    margin-top: 20%;
+    font-size: 24px;
+    font-weight: bold
+}
+.color-div{
+    background-color: #f1f2f4;
+    border-radius: 5%
+}
+.questions{
+    margin-top: 20%;
+    font-size: 16px;
+    font-weight: bold
+}
+.color-patito{
+    background-color: #f9cd09;
+    border-radius: 10%
+}
+.bold-white{
+    color: white;
+    font-size: 16px;
+    font-weight: bold
+}
