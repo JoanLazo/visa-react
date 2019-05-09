@@ -1,10 +1,16 @@
-import React from 'react';
-import Home from './components/Home/Home'
+import React, { Component } from 'react';
+// import './App.css';
+import Loan from './components/Loan/Loan.js';
 
-function App() {
-  return (
-  <Home />
-  );
-}
+
+class App extends Component {
+
+      render() {
+          return(
+            <Loan/>
+          )
+      }
+  }
+
 
 export default App;
