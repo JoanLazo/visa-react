@@ -91,7 +91,7 @@ const componentStepOne = ({
 
     <div className="container">
       <div className="row  text center justify-content-around">
-        <div className=" col-md-8">
+        <div className="col-md-12 justify-content-start align-items-start mr-5 margin-r">
           <span>Préstamo basado en TCEA 12%</span>
           <div mt-5>
             <h5>IMPORTANTE</h5>
