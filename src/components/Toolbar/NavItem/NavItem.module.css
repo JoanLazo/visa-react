@@ -1,8 +1,9 @@
 .NavItem {
-    margin: 0.3em;
-    box-sizing: border-box;
+    margin: 1rem;
+    /* box-sizing: border-box; */
     display: block;
-    width: 100%;
+    /* width: 100%; */
+    margin-left: 100px;
 }
 
 .NavItem a {
@@ -15,13 +16,14 @@
     float: right;
 }
 
+  
 .NavItem a:hover,
 .NavItem a:active,
 .NavItem a.active {
-    color: #7D0000;
+    color: #C50A5B;
 }
 
-@media (min-width: 500px) {
+@media (min-width: 500px) and (max-width: 950px) {
     .NavItem {
         margin: 0.2em;
         display: flex;
@@ -42,7 +44,7 @@
     .NavItem a:hover,
     .NavItem a:active,
     .NavItem a.active {
-        color: #7D0000;
-        border-bottom: 4px solid #7D0000;
+        color: #C50A5B;
+        border-bottom: 4px solid #C50A5B;
     }
 }

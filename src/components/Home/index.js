@@ -64,7 +64,7 @@ const Home = () => (
             <h1 className="color-yellow text-links">PIDE TU PRÉSTAMO PARA TU NEGOCIO</h1>
             <p className="color-white mt-4">Encuentra préstamos a tu medida, sin tantos requisitos y de forma rápida.</p>
             <button type="button" className="btn-solucion color-yellow mt-5">
-              <Link to="/lending">PIDE TU PRÉSTAMO</Link>
+              <Link to="/lending" className="links">PIDE TU PRÉSTAMO</Link>
             </button>
           </div>
         </div>
