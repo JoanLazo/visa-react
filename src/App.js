@@ -1,22 +1,14 @@
-import React, { Component } from 'react';
-// import './App.css';
-import StepOne from './components/StepOne/StepOne.js';
-import Home from './components/Home/Home.js';
+import React from 'react';
+import { BrowserRouter, Route } from 'react-router-dom';
 
+import Home from './components/Home';
+import Lending from './components/Lending';
 
+const app = () => (
+  <BrowserRouter>
+    <Route path="/" exact component={Home} />
+    <Route path="/lending" component={Lending} />
+  </BrowserRouter>
+);
 
-class App extends Component {
-
-      render() {
-          return(
-            <div>
-              <Home/>
-              <StepOne/>
-            </div>
-            
-          )
-      }
-  }
-
-
-export default App;
+export default app;

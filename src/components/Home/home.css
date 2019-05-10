@@ -47,7 +47,6 @@ body{
 .bckg-pink{
   background: #C50A5B;
 }
-
 .color-yellow{
   color: #F9CD09;
 }
@@ -70,7 +69,6 @@ body{
   font-size: 15px;
   font-weight: bold;
 }
-
 .text-medio{
   font-size: 30px;
   font-weight: bold;
@@ -106,8 +104,7 @@ body{
   padding-bottom: 50px;
   width: 250px;
   height: 60px;
-  font-size: 16px;
-  cursor: pointer;  
+  font-size: 16px;  
 }
 .btn-facebook{
   border: 1px solid #F9CD09;
@@ -115,8 +112,7 @@ body{
   padding-bottom: 10px;
   width: 250px;
   height: 60px;
-  font-size: 16px;
-  cursor: pointer;  
+  font-size: 16px;  
 }
 .border-yellow{
   border: 2px solid #F9CD09;
@@ -132,4 +128,23 @@ body{
   font-size: 18px;
   padding-top: 15px;
 
+}
+.btn-loquiero{
+  border: 1px solid #F9CD09;
+  padding: 8px 30px 8px 30px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+  margin-left: 100px;
+  margin-top: 20px;  
+}
+.links{
+  text-decoration: none;
+  text-decoration-color: #e5ebea;
+  color: #e5ebea;
+}
+.links:hover{
+  text-decoration: none;
+  color: #e5ebea;
 }
