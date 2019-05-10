@@ -1,0 +1,12 @@
+label{
+    color: #f9cd09;
+    font-size: 12px
+
+}
+.input-border{
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    border-color: #f9cd09;
+    border-width: thin
+}
