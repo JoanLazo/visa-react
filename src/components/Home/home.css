@@ -139,3 +139,12 @@ body{
   margin-left: 100px;
   margin-top: 20px;  
 }
+.links{
+  text-decoration: none;
+  text-decoration-color: #e5ebea;
+  color: #e5ebea;
+}
+.links:hover{
+  text-decoration: none;
+  color: #e5ebea;
+}
