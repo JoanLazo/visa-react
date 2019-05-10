@@ -1,6 +1,7 @@
 {
   "name": "visa-react",
   "version": "0.1.0",
+  "main": "src/index.js",
   "private": true,
   "dependencies": {
     "prop-types": "^15.7.2",
