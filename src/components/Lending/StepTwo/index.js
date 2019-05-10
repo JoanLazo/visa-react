@@ -120,7 +120,7 @@ const StepTwo = ({ nextStep, inputValues }) => {
                   ref={register({
                     required: true,
                     pattern: {
-                      value: /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{6,15}$/,
+                      value: /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[A-Za-z\d@$!%*?&]{6,15}$/,
                       message: 'Min 6 caracteres – max 15 caracteres, debe tener como min 1 número y una mayúscula',
                     },
                   })}

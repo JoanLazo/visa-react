@@ -4,6 +4,7 @@
   "main": "src/index.js",
   "private": true,
   "dependencies": {
+    "eslint-plugin-flowtype": "^3.8.1",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
