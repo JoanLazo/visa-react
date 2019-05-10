@@ -3,14 +3,15 @@ import Layout from '../Layout';
 import StepTwo from './StepTwo';
 import StepOne from './StepOne';
 import StepThree from './StepThree';
-// import StepFour from './StepFour';
-// import StepFive from './StepFive';
+import StepFour from './StepFour';
+import StepFive from './StepFive';
 
 
 const Lending = () => {
   const [step, setStep] = useState(1);
   const [registerUser, setRegisterUser] = useState({});
   const [choiceBank, setChoiceBank] = useState({});
+  const [deposit, setDeposit] = useState(0);
 
   useEffect(() => {
     console.log(registerUser);
@@ -19,6 +20,14 @@ const Lending = () => {
   useEffect(() => {
     console.log(choiceBank);
   }, [choiceBank]);
+
+  useEffect(() => {
+    console.log(deposit);
+  }, [deposit]);
+
+  const sendHandler = () => {
+    console.log('Se envia a firebase');
+  };
 
   const selectBank = (values) => {
     setChoiceBank(values);
@@ -46,22 +55,19 @@ const Lending = () => {
         selectBank={selectBank}
       />
       )}
-      {/* {step === 4 && ( // aquí debería ir sendHandler para enviar la data a firebase
+      {step === 4 && ( // aquí debería ir sendHandler para enviar la data a firebase
         <StepFour
           sendHandler={sendHandler}
-          cuotaMensual={cuotaMensual} // step3
-          prestamo={prestamo} // step3
-          interes={interes} // step3
-          totalAPagar={totalAPagar} // step3
+          cuotaMensual={choiceBank.cuota} // step3
+          prestamo={choiceBank.amount} // step3
+          interes={choiceBank.interes} // step3
+          totalAPagar={choiceBank.totalAmount} // step3
           nextStep={nextStep}
-          nroCuentaValue={nroCuenta} // step4
-          bankChoiceValue={nroCuenta}
+          selectedBank={data => setDeposit(data)}
         />
-      )} */}
+      )}
       {step === 5 && (
-      {/* <StepFive
-        nextStep={nextStep}
-      /> */}
+      <StepFive />
       )}
 
     </Layout>

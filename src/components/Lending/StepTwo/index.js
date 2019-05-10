@@ -16,7 +16,7 @@ const StepTwo = ({ nextStep, inputValues }) => {
         ref={register({
           required: true,
           pattern: {
-            value: /^[A-Z]{1}[a-z]{9}$/,
+            value: /^[A-Z]{1}[a-z]{5,}$/,
             message: 'La primera Letra debe ser Mayúscula, solo se admiten letras',
           },
         })}
@@ -28,7 +28,7 @@ const StepTwo = ({ nextStep, inputValues }) => {
         ref={register({
           required: true,
           pattern: {
-            value: /^[A-Z]{1}[a-z]{9}$/,
+            value: /^[A-Z]{1}[a-z]{5,}$/,
             message: 'La primera Letra debe ser Mayúscula, solo se admiten letras',
           },
         })}
@@ -62,7 +62,7 @@ const StepTwo = ({ nextStep, inputValues }) => {
         ref={register({
           required: true,
           pattern: {
-            value: /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{6,15}$/,
+            value: /^(?=.*[A-Z].*[A-Z])(?=.*[0-9].*[0-9])(?=.*[a-z].*[a-z]).{6,15}$/,
             message: 'Min 6 caracteres – max 15 caracteres, debe tener como min 1 número y una mayúscula',
           },
         })}
