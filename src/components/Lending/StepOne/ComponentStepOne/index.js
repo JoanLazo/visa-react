@@ -11,8 +11,7 @@ const componentStepOne = ({
       <div className="container mt-4">
         <div className="row justify-content-center">
           <img className="mb-5 mt-4" src="https://i.ibb.co/0DCHVbV/barra-de-pasos.png" />
-
-        </div>
+       </div>
       </div>
     </div>
 
@@ -92,7 +91,7 @@ const componentStepOne = ({
 
     <div className="container">
       <div className="row  text center justify-content-around">
-        <div className=" col-md-8">
+        <div className="col-md-12 justify-content-start align-items-start mr-5 margin-r">
           <span>Préstamo basado en TCEA 12%</span>
           <div mt-5>
             <h5>IMPORTANTE</h5>
