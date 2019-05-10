@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css?family=Arimo');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+body{
+  font-family: 'Roboto', sans-serif;
+}
+.baner-home{
+  width: 1200px;
+  height: 600px;
+  background-image: url('https://user-images.githubusercontent.com/44485081/57424038-e11c1000-71db-11e9-88a4-deff5f3904de.png');
+  background-position: center;
+  background-size: cover;
+}
+.btn-baner{
+  border: 1px solid #C50A5B;
+  background: transparent;
+  padding-top: 35px;
+  padding-bottom: 55px;
+  border-radius: 5px;
+  width: 300px;
+  height: 50px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.btn-solucion{
+  border: 1px solid #F9CD09;
+  background: transparent;
+  padding-top: 35px;
+  padding-bottom: 55px;
+  border-radius: 5px;
+  width: 300px;
+  height: 50px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.btn-solucion:hover{
+  background: #F9CD09;
+  color: aliceblue;
+}
+.color-black{
+  color: #000000;
+}
+.color-pink{
+  color: #C50A5B;
+}
+.bckg-pink{
+  background: #C50A5B;
+}
+.color-yellow{
+  color: #F9CD09;
+}
+.bckg-black{
+  background: #000000;
+}
+.bckg-yellow{
+  background: #F9CD09;
+}
+.color-white{
+  color: aliceblue;
+}
+.text-baner{
+  font-size: 25px;
+  font-weight: bold;
+  padding: 0px;
+  margin: 0px;
+}
+.text-top{
+  font-size: 15px;
+  font-weight: bold;
+}
+.text-medio{
+  font-size: 30px;
+  font-weight: bold;
+}
+.text-center{
+  text-align: center;
+}
+.text-content{
+  font-size: 15px;
+}
+.text-mini{
+  font-size: 14px;
+}
+.text-links{
+  font-size: 21px;
+  margin-top: 100px;
+}
+
+.margen{
+  margin-left: 20%;
+}
+.img-links{
+  width: 600px;
+  height: 500px;
+}
+.margin-r {
+  padding-right: 42px;
+  margin-right: 50px;
+}
+.btn-solucion-two{
+  border: 1px solid #F9CD09;
+  padding-top: 15px;
+  padding-bottom: 50px;
+  width: 250px;
+  height: 60px;
+  font-size: 16px;  
+}
+.btn-facebook{
+  border: 1px solid #F9CD09;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  width: 250px;
+  height: 60px;
+  font-size: 16px;  
+}
+.border-yellow{
+  border: 2px solid #F9CD09;
+  border-radius: 5px;
+}
+
+.img-card-home{
+  width: 200px;
+  height: 200px;
+}
+.footer{
+  padding: 10px;
+  font-size: 18px;
+  padding-top: 15px;
+
+}
+.btn-loquiero{
+  border: 1px solid #F9CD09;
+  padding: 8px 30px 8px 30px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+  margin-left: 100px;
+  margin-top: 20px;  
+}
+.links{
+  text-decoration: none;
+  text-decoration-color: #e5ebea;
+  color: #e5ebea;
+}
+.links:hover{
+  text-decoration: none;
+  color: #e5ebea;
+}
