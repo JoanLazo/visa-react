@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Layout from '../Layout';
 import StepTwo from './StepTwo';
 import StepOne from './StepOne';
-// import StepThree from './StepThree';
+import StepThree from './StepThree';
 // import StepFour from './StepFour';
 import StepFive from './StepFive';
 
@@ -10,10 +10,19 @@ import StepFive from './StepFive';
 const Lending = () => {
   const [step, setStep] = useState(1);
   const [registerUser, setRegisterUser] = useState({});
+  const [choiceBank, setChoiceBank] = useState({});
 
   useEffect(() => {
     console.log(registerUser);
   }, [registerUser]);
+
+  useEffect(() => {
+    console.log(choiceBank);
+  }, [choiceBank]);
+
+  const selectBank = (values) => {
+    setChoiceBank(values);
+  };
 
   const nextStep = () => {
     setStep(step + 1);
@@ -31,11 +40,12 @@ const Lending = () => {
         inputValues={values => setRegisterUser(values)}
       />
       )}
-      {/* {step === 3 && (
+      {step === 3 && (
       <StepThree
         nextStep={nextStep}
+        selectBank={selectBank}
       />
-      )} */}
+      )}
       {/* {step === 4 && ( // aquí debería ir sendHandler para enviar la data a firebase
         <StepFour
           sendHandler={sendHandler}
