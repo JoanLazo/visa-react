@@ -148,3 +148,8 @@ body{
   text-decoration: none;
   color: #e5ebea;
 }
+.text-toolbar{
+  font-size: 20px;
+  font-weight: bold;
+  padding: 0px;
+}

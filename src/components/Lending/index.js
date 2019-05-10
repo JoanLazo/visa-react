@@ -4,7 +4,7 @@ import StepTwo from './StepTwo';
 import StepOne from './StepOne';
 import StepThree from './StepThree';
 // import StepFour from './StepFour';
-import StepFive from './StepFive';
+// import StepFive from './StepFive';
 
 
 const Lending = () => {
@@ -59,9 +59,9 @@ const Lending = () => {
         />
       )} */}
       {step === 5 && (
-      <StepFive
+      {/* <StepFive
         nextStep={nextStep}
-      />
+      /> */}
       )}
 
     </Layout>
