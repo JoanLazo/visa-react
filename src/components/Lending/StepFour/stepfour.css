@@ -1,0 +1,35 @@
+.color-gris{
+    background: #F1F2F4;
+    padding: 15px;
+    border-radius: 5px;
+}
+.btn-prestamo{
+    border: 1px solid #F9CD09;
+    padding: 8px 30px 8px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-left: 100px;
+    margin-top: 20px;  
+}
+.bckg-yellow{
+    background: #F9CD09;
+  }
+  .color-yellow{
+    color: #F9CD09;
+  }
+  .border-yellow-input{
+    border: 1px solid #F9CD09;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  .color-black{
+    color: #000000;
+  }
+  .bolt{
+    font-weight: bold;
+  }
+  .text-mensual{
+      font-size: 12px;
+  }

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ComponentStepOne from './ComponentStepOne/ComponentStepOne.js';
+import ComponentStepOne from './ComponentStepOne';
 
 
 class StepOne extends Component {
