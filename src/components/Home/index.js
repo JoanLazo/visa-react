@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './home.css';
 
 const Home = () => (
@@ -62,7 +63,9 @@ const Home = () => (
           <div className="margen col-8">
             <h1 className="color-yellow text-links">PIDE TU PRÉSTAMO PARA TU NEGOCIO</h1>
             <p className="color-white mt-4">Encuentra préstamos a tu medida, sin tantos requisitos y de forma rápida.</p>
-            <button className="btn-solucion color-yellow mt-5">PIDE TU PRÉSTAMO</button>
+            <button type="button" className="btn-solucion color-yellow mt-5">
+              <Link to="/lending">PIDE TU PRÉSTAMO</Link>
+            </button>
           </div>
         </div>
 
@@ -104,33 +107,33 @@ const Home = () => (
               <div className="col-4 justify-content-center align-content-center">
                 <button className="btn-facebook bckg-yellow color-white my-2 ml-5">VENDO POR FACEBOOK</button>
                 <div className="border-yellow mt-1 py-4 align-content-center">
-                <p className="ml-4 col-10 text-mini text-justify">CON ESTE PACK AUMENTARÁS UN 20% TUS VENTAS</p>
-                  <img className="margen img-card-home" src="https://user-images.githubusercontent.com/44485081/57427956-d1a4c300-71eb-11e9-830c-3adb47971fb6.jpg" alt="poket pos"></img>
-               </div>
-               <button className="btn-loquiero bckg-yellow color-white">LO QUIERO</button>
+                  <p className="ml-4 col-10 text-mini text-justify">CON ESTE PACK AUMENTARÁS UN 20% TUS VENTAS</p>
+                  <img className="margen img-card-home" src="https://user-images.githubusercontent.com/44485081/57427956-d1a4c300-71eb-11e9-830c-3adb47971fb6.jpg" alt="poket pos" />
+                </div>
+                <button className="btn-loquiero bckg-yellow color-white">LO QUIERO</button>
               </div>
 
               <div className="col-4 justify-content-center align-content-center">
                 <button className="btn-solucion-two bckg-yellow color-white my-2 ml-5">TENGO UNA TIENDA FÍSICA Y QUIERO CRECER</button>
                 <div className="border-yellow mt-1 py-4 align-content-center">
-                <p className=" ml-4 col-10 text-mini text-justify text-center">CON ESTE PACK PODRÁS VENDER DE FORMA ONLINE</p>
-                  <img className="margen img-card-home" src="https://user-images.githubusercontent.com/44485081/57427972-e3866600-71eb-11e9-8934-dd8bcbf864b2.jpg" alt="tu vitrina"></img>
+                  <p className=" ml-4 col-10 text-mini text-justify text-center">CON ESTE PACK PODRÁS VENDER DE FORMA ONLINE</p>
+                  <img className="margen img-card-home" src="https://user-images.githubusercontent.com/44485081/57427972-e3866600-71eb-11e9-8934-dd8bcbf864b2.jpg" alt="tu vitrina" />
                 </div>
                 <button className="btn-loquiero bckg-yellow color-white">LO QUIERO</button>
-             </div>
+              </div>
 
               <div className="col-4 justify-content-center align-content-center">
                 <button className="btn-solucion-two bckg-yellow color-white my-2 ml-4">BUSCO SERVICIOS DE VALOR AGREGADO</button>
-                  <div className="border-yellow mt-1 py-4 align-content-center">
-                  <p className=" ml-4 col-10 text-mini text-justify text-center">CON ESTE PACK PODRÁS OFRECER MÁS SERVICIOS</p>
-                     <img className="margen img-card-home" src="https://user-images.githubusercontent.com/44485081/57427989-f6993600-71eb-11e9-8489-54534a5d8429.jpg" alt="suma"></img>
+                <div className="border-yellow mt-1 py-4 align-content-center">
+                    <p className=" ml-4 col-10 text-mini text-justify text-center">CON ESTE PACK PODRÁS OFRECER MÁS SERVICIOS</p>
+                    <img className="margen img-card-home" src="https://user-images.githubusercontent.com/44485081/57427989-f6993600-71eb-11e9-8489-54534a5d8429.jpg" alt="suma" />
                   </div>
-                  <button className="btn-loquiero bckg-yellow color-white">LO QUIERO</button>
-                 </div>
-               </div>
-            </div>
+                <button className="btn-loquiero bckg-yellow color-white">LO QUIERO</button>
+              </div>
             </div>
           </div>
+        </div>
+      </div>
     </section>
 
     <footer className="bckg-black footer color-white text-center align-content-center align-items-center">
