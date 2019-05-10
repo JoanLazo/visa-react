@@ -2,10 +2,24 @@ import React from 'react';
 import './stepfour.css';
 
 const stepFour = ({sendHandler, empresaImg, cuotaMensual, prestamo, interes, totalaPagar }) => {
+//     // llevar al componente padre
+//     const [inputCuenta, setInputCuenta] = useState('');
+//    const handleInputChange = (event) => {
+//       const { value } = event.target;
+//       if( value === String) {
+//           alert("La cuenta bancaria debe ser una lista números");
+//       }
+//       setInputCuenta(inputCuenta);
+//       setInputCuenta( value );
+//       console.log(inputCuenta); 
+//    }
+   const entidadesBancarias = [ "BANCO PICHINCHA","BANCO DE CREDITO", "BANCO CONTINENTAL", "BANCO INTERBANK", "BANCO DE LA NACION","MI BANCO","SCOTIABANK"];
     
-    const continueHandler = (e, inputCuenta, inputBanco  ) => {
+   
+   const continueHandler = (e, inputCuenta, inputBanco ) => {
         e.preventDefault();
-        sendHandler();
+        sendHandler([{inputCuenta, inputBanco}]);
+        continueStep();
     }
 
  return(
@@ -65,21 +79,23 @@ const stepFour = ({sendHandler, empresaImg, cuotaMensual, prestamo, interes, tot
     <form className="d-flex flex-column">
         <h6>Datos</h6>
         <label>Ingresa el N° de cuenta donde se depositará tu préstamo</label>
-        <input className="border-yellow-input" type="text" name="cuenta"></input>
+        <input className="border-yellow-input" type="text" name="cuenta" onChange={handleInputChange}></input>
         <label>Banco</label>
         <select className="border-yellow-input"  name="banco">
-            <option value="BANCO BNG">BANCO BNG</option>
+            <option value="BANCO PICHINCHA">PICHINCHA</option>
             <option value="BANCO DE CREDITO">BANCO DE CREDITO DEL PERÚ</option>
             <option value="BANCO CONTINENTAL">BANCO CONTINENTAL (BBVA)</option>
             <option value="BANCO INTERBANK">BANCO INTERBANK</option>
             <option value="BANCO DE LA NACION">BANCO DE LA NACION</option>
+            <option value="MI BANCO">MI BANCO</option>
+            <option value="SCOTIABANK">SCOTIABANK</option>
         </select>
         <div>
         <input type="checkbox"></input>Acepto <span><a href="">términos y condiciones</a></span> <br/>
         <input type="checkbox"></input>Acepto <span><a href="">compartir los datos de ventas de Visanet con la entidad financiera.</a></span>
         </div>
         
-        <button className="col-5 btn-prestamo color-black bckg-yellow" onClick = { () => continueHandler() }>RECIBIR MI PRÉSTAMO</button>
+        <button className="col-5 btn-prestamo color-black bckg-yellow" onSubmit = { () => continueHandler( inputCuenta, inputBanco) }>RECIBIR MI PRÉSTAMO</button>
     </form>
 <div>
  <h5 className="mt-5">ATENCIÓN AL CLIENTE:</h5>
