@@ -1,7 +1,6 @@
 {
   "name": "visa-react",
   "version": "0.1.0",
-  "main": "src/index.js",
   "private": true,
   "dependencies": {
     "eslint-plugin-flowtype": "^3.8.1",

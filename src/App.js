@@ -6,8 +6,8 @@ import Lending from './components/Lending';
 
 const app = () => (
   <HashRouter basename={process.env.PUBLIC_URL}>
-    <Route path="/" exact component={Home} />
-    <Route path="/lending" component={Lending} />
+    <Route path={`${process.env.PUBLIC_URL}/`} exact component={Home} />
+    <Route path={`${process.env.PUBLIC_URL}/lending`} component={Lending} />
   </HashRouter>
 );
 
