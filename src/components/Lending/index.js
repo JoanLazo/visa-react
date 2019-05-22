@@ -1,6 +1,8 @@
+/* eslint-disable import/no-named-as-default-member */
 import React, { useState, useEffect } from 'react';
 import Layout from '../Layout';
 import StepTwo from './StepTwo';
+// eslint-disable-next-line import/no-named-as-default
 import StepOne from './StepOne';
 import StepThree from './StepThree';
 import StepFour from './StepFour';
