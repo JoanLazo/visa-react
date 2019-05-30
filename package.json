@@ -1,6 +1,7 @@
 {
   "name": "visa-react",
   "version": "0.1.0",
+  "homepage": "https://joanlazo.github.io/visa-react/",
   "private": true,
   "dependencies": {
     "eslint-plugin-flowtype": "^3.8.1",
